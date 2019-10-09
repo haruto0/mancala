@@ -2,6 +2,19 @@ p {
 	text-align: center;
 }
 
+
+tr,td{
+	border: 3px solid black;
+}
+
+#box_again{
+	border: 3px solid red;
+}
+#box_again td {
+	border: 3px solid red;
+}
+
+/*
 #box_enemy ul {
 	display: -webkit-flex;
 	list-style: none;
@@ -50,4 +63,4 @@ p {
 	padding: 40px;
 	flex-grow: 1;
 }
-
+*/

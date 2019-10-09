@@ -1,12 +1,10 @@
-function move() {
-    var ban = document.getElementById("box_enemy");
-
-    y=0;
-    for (var x=0; x<3; x++) {
-        var oseta = ban.rows[x].cells[y];
-        oseta.onclick = function () {oseta(this);}
-    }
-}
-function oseta(Cell) {
-    oseta.innerHTML="押した";
+function move(ele) {
+	var ban = document.getElementById("box_enemy");
+	var tmp = ban.getAttribute("id");
+	console.log(tmp);
+	console.log("move押されたよ");
+	console.log("move押されたよ");
+	console.log(ele);
+	console.log(ban);
+	
 }
