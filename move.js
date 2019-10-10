@@ -1,10 +1,12 @@
 function move(ele) {
-	var ban = document.getElementById("box_enemy");
-	var tmp = ban.getAttribute("id");
-	console.log(tmp);
-	console.log("move押されたよ");
-	console.log("move押されたよ");
-	console.log(ele);
-	console.log(ban);
+	var stone_address = new Array(8);
 	
+	for(i=0;i<8;i++){
+		if(i!=3 && i!=7){
+			stone_address[i] = 3;
+		}
+	}
+	
+	console.log(ele);
+	console.log(stone_address);	
 }
