@@ -1,0 +1,12 @@
+p {
+	text-align: center;
+}
+tr,td{
+	border: 3px solid black;
+}
+#box_again{
+	border: 3px solid red;
+}
+#box_again td {
+	border: 3px solid red;
+}

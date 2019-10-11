@@ -2,109 +2,17 @@
 <html lang="jp">
 <head>
     <meta charset="UTF-8">
-    <title>mancala</title>
+    <title>Title</title>
 	<meta name="Author" content=""/>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="move.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
 </head>
 <body>
-<h1>マンカラ</h1>
-<!--
-<div id="box_entire">
-<div id="box_enemy">
-	<table>
-		<ul>
-            <li>
-               <input type="image" src="img/065160.png" alt="stone" id="area1" width="50" height="50" onclick="move(this)">
-                <img src="img/065160.png" alt="text" width="50" height="50" >
-                <img src="img/065160.png" alt="text" width="50" height="50" >
-                <img src="img/065160.png" alt="text" width="50" height="50" >
-            </li>
-			<li>
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-			</li>
-			<li>
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-			</li>
-		</ul>
-	</table>
-</div>
-<div id="box_again">
-	<ul>
-		<li>
-		</li>
-		<li>
-		</li>
-	</ul>
-</div>
-<div id="box_self">
-	<table>
-		<ul>
-			<li>
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-			</li>
-			<li>
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-			</li>
-			<li>
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-				<img src="img/065160.png" alt="text" width="50" height="50" >
-			</li>
-		</ul>
-	</table>
-</div>
-</div>
--->
 
-<table>
-	<tr id="box_enemy">
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="0" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="0" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="0" width="50" height="50" onclick="move(value)">
-		</td>
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="1" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="1" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="1" width="50" height="50" onclick="move(value)">
-		</td>
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="2" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="2" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="2" width="50" height="50" onclick="move(value)">
-		</td>
-	</tr>
-	<tr id="box_again">
-		<td></td>
-		<td></td>
-	</tr>
-	<tr id="box_self">
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="6" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="6" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="6" width="50" height="50" onclick="move(value)">
-		</td>
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="5" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="5" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="5" width="50" height="50" onclick="move(value)">
-		</td>
-		<td>
-			<input type="image" src="img/065160.png" alt="stone" value="4" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="4" width="50" height="50" onclick="move(value)">
-			<input type="image" src="img/065160.png" alt="stone" value="4" width="50" height="50" onclick="move(value)">
-		</td>
-	</tr>
-</table>
+<h1>マンからタイトル画面</h1>
+<form action="http://localhost:8888/mancala/main.php" method="post">
+	<input type="text" name="name" value="名前を登録"><br>
+	<input type="submit" value="ゲームを始める">
+</form>
 
 </body>
 </html>
