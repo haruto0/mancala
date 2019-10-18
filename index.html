@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
 	<meta name="Author" content=""/>
-	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<link rel="stylesheet" type="text/css" href="src/index.css">
 </head>
 <body>
 
 <h1>マンからタイトル画面</h1>
 <form action="http://localhost:8888/mancala/main.php" method="post">
-	<input type="text" name="name" value="名前を登録"><br>
+	<table>
+		<tr>
+			<td><p>プレイヤー1の名前を登録:</p></td>
+			<td><input type="text" name="name1" value=""></td>
+		</tr>
+		<tr>
+			<td><p>プレイヤー2の名前を登録:</p></td>
+			<td><input type="text" name="name2" value=""></td>
+		</tr>
+	</table>
 	<input type="submit" value="ゲームを始める">
 </form>
 

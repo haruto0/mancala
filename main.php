@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>mancala</title>
 	<meta name="Author" content=""/>
-	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<link rel="stylesheet" type="text/css" href="src/main.css">
 	<script src="src/init.js"></script>
 	<script src="src/move.js"></script>
+	<script src="src/displayTable.js"></script>
 
 </head>
 <body>
 <h1>マンカラ</h1>
 <h3>
 	<?php
-	$inputName = $_POST['name'];
-	print($inputName);
-	print("さんの挑戦！！！")
+	$inputName1 = $_POST['name1'];
+	$inputName2 = $_POST['name2'];
+	print($inputName1);
+	print("vs");
+	print($inputName2);
 	?>
 </h3>
 

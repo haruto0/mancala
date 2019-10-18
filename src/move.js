@@ -1,17 +1,17 @@
 function move(place) {
-	console.log(stoneAddress);
+	place = Number(place);
 	//全体の文章を取得
 	var entire = document.getElementById('entire')
+	//stoneNumに配列にある碁石の数を代入。
 	var stoneNum = stoneAddress[place];
+	//石の場所の配列を0にする。
 	stoneAddress[place]=0;
-	//石の場所を移動する。
+	
+	//石の場所を移動する
 	for(i=place;i<(place+stoneNum);i++){
-		stoneAddress[(i+1)%8] = stoneAddress[(i+1)%8] + 1;
-	}
-	
-	return(stoneAddress);
-	
+		console.log((i+1)%8);
+		stoneAddress[(i+1)%8] += 1;
+	}	
 	console.log(entire);
-	console.log(place);
-	console.log(stoneAddress);
+	displayTable();
 }
