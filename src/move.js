@@ -1,7 +1,7 @@
 function move(place) {
 	place = Number(place);
 	//全体の文章を取得
-	var entire = document.getElementById('entire')
+	var entire = document.getElementById('entire');
 	//stoneNumに配列にある碁石の数を代入。
 	var stoneNum = stoneAddress[place];
 	//石の場所の配列を0にする。
@@ -13,5 +13,5 @@ function move(place) {
 		stoneAddress[(i+1)%8] += 1;
 	}	
 	console.log(entire);
-	displayTable();
+	document.write(displayTable());
 }
