@@ -12,6 +12,8 @@ function move(place) {
 		console.log((i+1)%8);
 		stoneAddress[(i+1)%8] += 1;
 	}	
-	console.log(entire);
-	document.write(displayTable());
+	console.log("entireの中身" + entire);
+
+	console.log("displayTableの中身" + displayTable());
+	document.entire.innerHTML(displayTable());
 }
