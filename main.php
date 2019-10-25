@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>mancala</title>
 	<meta name="Author" content=""/>
-	<link rel="stylesheet" type="text/css" href="src/main.css">
-	<script src="src/init.js"></script>
-	<script src="src/move.js"></script>
-	<script src="src/displayTable.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+	<script src="src/js/init.js"></script>
+	<script src="src/js/move.js"></script>
+	<script src="src/js/displayTable.js"></script>
 
 </head>
 <body>
