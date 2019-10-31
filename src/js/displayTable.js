@@ -10,15 +10,15 @@ function displayTable(){
 
 function generateRow(num,indexes){
 	var generatedRow;
-
+	generatedRow += '<table id="entire">';
 	for(i=0;i<num;i++){
 		generatedRow += '<td>';
 		for(j=0;j<indexes.length;j++){
 			console.log("indexes"+j);
-			generatedRow += '<input type="image" src="img/065160.png" alt="stone" $`value={j}` width="50" height="50" onclick="move(value)">';
+			generatedRow += '<input type="image" src="img/065160.png" alt="stone" `value=${j}` width="50" height="50" `onclick=${move(value)}`>';
 		}
 		generatedRow += '</td>';
-		generatedRow += '</td>';
 	}
+	generatedRow += '</table>';
 	return generatedRow;
 }
