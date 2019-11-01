@@ -4,6 +4,10 @@ p {
 tr,td{
 	border: 3px solid black;
 }
+table {
+	width: 80%;
+	height: 50%;
+}
 #box_again{
 	border: 3px solid red;
 }

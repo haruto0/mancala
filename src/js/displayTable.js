@@ -1,12 +1,12 @@
 function displayTable(){
 	var entireHtml = '<table id=\"entire\">'
-		+ '<tr id=¥"box_enemy¥">'
+		+ '<tr id="box_enemy">'
 		+ `${generateRow(3,[0,1,2])}`
 		+ '</tr>'
-		+ '<tr id=¥"box_again">'
+		+ '<tr id="box_again">'
 		+ `${generateRow(2,[7,3])}`
 		+ '</tr>'
-		+ '<tr id=¥"box_self¥">'
+		+ '<tr id="box_self">'
 		+ `${generateRow(3,[6,5,4])}`
 		+ '</tr>'
 		+ '</table>';
