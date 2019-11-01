@@ -1,0 +1,15 @@
+{
+  "name": "mancala",
+  "version": "0.0.0",
+  "description": "マンカラというボードゲームを製作中",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/haruto0/mancala"
+  },
+  "author": "",
+  "license": "ISC"
+}

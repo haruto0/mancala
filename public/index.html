@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="src/index.css">
+</head>
+<body>
+
+<h1>マンからタイトル画面</h1>
+	<table>
+		<tr>
+			<td><p>プレイヤー1の名前を登録:</p></td>
+			<td><input type="text" id="name1" value=""></td>
+		</tr>
+		<tr>
+			<td><p>プレイヤー2の名前を登録:</p></td>
+			<td><input type="text" id="name2" value=""></td>
+		</tr>
+	</table>
+<button id="submit">ゲームを始める</button>
+<script>
+	//jsを書いていく感じ
+	document.getElementById("submit").onclick = function () {
+		console.log("ハンドル");
+		const name1 = document.getElementById('name1').value;
+		const name2 = document.getElementById('name2').value;
+		const json = {
+			"name1" : name1,
+			"name2" : name2
+		};
+		fetch('/enterroom', {
+			method: 'POST',
+			headers: {
+				'content-type': 'application/json',
+			},
+			body: JSON.stringify(json)
+
+		})
+	}
+</script>
+</body>
+</html>
