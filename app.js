@@ -14,5 +14,8 @@ app.use(bodyParser.json());
 //     res.send('Hello World!!!!!!!!!!');
 // });
 app.post('/enterroom', function (req, res) {
-    res.send(main.html);
+    console.log("reqされた中身"+req);
+    obj = JSON.parse(req.body);
+    console.log("parseされたjson"+obj);
+    res.send(obj);
 });
