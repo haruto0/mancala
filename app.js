@@ -10,9 +10,7 @@ var server = app.listen(3000, function () {
 });
 app.use(express.static('public'));
 app.use(bodyParser.json());
-// app.get('/', function (req, res) {
-//     res.send('Hello World!!!!!!!!!!');
-// });
+
 app.post('/enterroom', function (req, res) {
     console.log("reqされた中身"+req);
     res.send("../main.html");
