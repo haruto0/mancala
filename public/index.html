@@ -27,8 +27,8 @@
 		const name1 = document.getElementById('name1').value;
 		const name2 = document.getElementById('name2').value;
 		const json = {
-			"name1" : name1,
-			"name2" : name2
+			name1 : name1,
+			name2 : name2
 		};
 		fetch('/enterroom', {
 			method: 'POST',
@@ -36,9 +36,7 @@
 				'content-type': 'application/json',
 			},
 			body: JSON.stringify(json)
-		}).then(response => {
-			console.log("responseされた中身"+response);
-		});
+		}).then(res => console.log("responseされた中身"+res));
 	}
 </script>
 </body>
